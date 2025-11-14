@@ -1,0 +1,195 @@
+/* signStyles.css - Custom styles for SignatureMatch buttons and name list */
+ 
+.signature-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 1.5rem;
+}
+
+.signature-main-card {
+  background: linear-gradient(135deg, #f8fafc 60%, #e0e7ff 100%);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.signature-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.signature-display-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #888;
+  height: 350px;
+  margin-bottom: 10px;
+}
+
+.signature-action-row {
+  display: flex;
+  gap: 0px;
+  margin-bottom: 16px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.signature-match-btn,
+.signature-mismatch-btn {
+  font-weight: bold;
+  padding: 10px 30px;
+  border: 1.5px solid #ccc;
+  cursor: pointer;
+  background: #f3f4f6;
+}
+
+.signature-match-btn.active {
+  background: #d1fae5;
+  color: #2563eb;
+}
+
+.signature-mismatch-btn.active {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.signature-image-nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.signature-arrow-btn {
+  background: #f3f4f6;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(60,60,120,0.10);
+  color: #2563eb;
+  font-size: 1.7rem;
+  transition: background 0.2s, color 0.2s;
+  opacity: 0.85;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.signature-arrow-btn.left {
+  left: 0;
+  top: 10px;
+}
+
+.signature-arrow-btn.right {
+  right: 0;
+  top: 10px;
+}
+
+.signature-arrow-icon {
+  font-size: 2rem;
+}
+
+.signature-main-image {
+  max-width: 300px;
+  width: 100%;
+  height: 100px;
+  box-shadow: 0 4px 24px rgba(13, 13, 246, 0.13);
+  margin-bottom: 12px;
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.signature-main-name {
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.signature-main-name span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: blue;
+}
+
+.signature-search-row {
+  border-top: 2px solid #e5e7eb;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: start;
+}
+
+.signature-search-input {
+  border-radius: 4px;
+  width: 20%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.signature-list-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.signature-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.signature-list-item.active {
+  border: 2px solid #2563eb;
+  background-color: #164af3ff;
+  box-shadow: 0 0 0 2px #2563eb;
+}
+
+.signature-list-image {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
+.signature-list-image.active {
+  border: 2px solid #2563eb;
+  background-color: #d7dffaff;
+}
+
+.signature-list-name {
+  font-weight: bold;
+  color: #164af3ff;
+  font-size: 1rem;
+}
+
+.signature-list-item.active .signature-list-name {
+  color: #ebeff7ff;
+}
+
+.signature-no-result {
+  text-align: center;
+  color: #888;
+  padding: 32px 0;
+}
+
+.signature-name-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
