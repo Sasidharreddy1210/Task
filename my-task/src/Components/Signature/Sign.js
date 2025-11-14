@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Sign.css";
-import img1 from "../src/Assests/Sachin.png";
-import img2 from "../src/Assests/Sasi.png";
-import img3 from "../src/Assests/vinod.png";
+import img1 from "../../Assests/Sachin.png";
+import img2 from "../../Assests/Sasi.png";
+import img3 from "../../Assests/vinod.png";
 
 const allSignatures = [
   {

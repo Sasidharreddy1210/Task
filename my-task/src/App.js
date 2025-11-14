@@ -1,6 +1,6 @@
 
 import './App.css';
-import SignatureMatch from './Sign';
+import SignatureMatch from './Components/Signature/Sign';
 
 function App() {
   return (
